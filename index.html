@@ -88,19 +88,41 @@
             <div class="container">
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <video class="d-block w-100" src="/video/ten bananas.mp4" controls></video>
+                        <video class="d-block w-100" src="/video/ah I see.mp4" controls></video>
                     </div>
                     <div class="col-md-8">
                         <div class="card h-100">
                             <div class="card-body d-flex flex-column">
                                 <div>
                                     <article>
-                                        <!--text right doesn't seem to be working-->
+                                        <!--text-right doesn't seem to be working-->
                                         <header>
                                             <h3 class="text-right">Videos</h3>
                                         </header>
                                         <p class="text-right">I like to stream on ocassion.</p>
                                         <a class="text-right" href="videos.html">Watch some clips</a>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">
+                                            Secret Video Button
+                                        </button>
+                                        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="videoModalLabel">Secret Video</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        lol
+                                                        <video class="w-100" src="/video/ten bananas.mp4" controls></video>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </article>
                                 </div>
                             </div>
